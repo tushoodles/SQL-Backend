@@ -12,6 +12,9 @@ routes.forEach((route) => {
 app.use("/health", (req: Request, res: Response) => {
   res.json({ message: "Good" });
 });
+app.use('admin-health',(req:Request , res:Response)=>{
+	res.json({message:"Working Admin"})
+});
 
 app.listen(5050, async () => {
   await createStudenttable();
