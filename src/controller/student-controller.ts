@@ -28,6 +28,10 @@ class StudentController {
       .status(200)
       .json({ message: "Field Update Successfully..", data: result });
   }
+
+  public async deleteStudent(req:Request , res:Response){
+    const result = await studentService.deleteStudent(req);
+  }
 }
 
 export const studentController = new StudentController();

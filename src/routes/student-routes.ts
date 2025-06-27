@@ -24,6 +24,10 @@ class StudentRoutes {
         `${this.path}update-student-name`,
         studentController.updateStudentName.bind(studentController)
     );
+    this.router.post(
+      `${this.path}delete-name`,
+      studentController.deleteStudent.bind(studentController)
+    );
     
 
 

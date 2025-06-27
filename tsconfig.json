@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",                          // JavaScript version to compile to
+      "module": "CommonJS",                        // Node.js compatible module system
+      "rootDir": "src",                            // Where your .ts files live
+      "outDir": "dist",                            // Where compiled .js files go
+      "strict": true,                              // Enables all strict type checks
+      "esModuleInterop": true,                     // Allows import of CommonJS modules
+      "moduleResolution": "node",                  // Resolve modules the Node.js way
+      "resolveJsonModule": true,                   // Allow importing .json files
+      "skipLibCheck": true,                        // Speed up compilation (ignore types in node_modules)
+      "forceConsistentCasingInFileNames": true     // Prevent file name case mismatches
+    },
+    "include": ["src"],                            // Only compile files in src/
+    "exclude": ["node_modules", "dist"]            // Don’t compile these folders
+  }
