@@ -16,6 +16,10 @@ app.use('admin-health',(req:Request , res:Response)=>{
 	res.json({message:"Working Admin"})
 });
 
+app.use('/check-connection',(req:Request , res:Response)=>{
+	res.json({message:'Check Connection'})
+});
+
 app.listen(5050, async () => {
   await createStudenttable();
   console.log(`Server is Running 5050`);
